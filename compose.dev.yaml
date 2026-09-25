@@ -1,0 +1,6 @@
+services:
+  recipedrop:
+    image: recipedrop:dev
+    build:
+      context: .
+      dockerfile: Dockerfile

@@ -1,0 +1,10 @@
+services:
+  recipedrop:
+    image: ghcr.io/dilpreet-g/recipedrop:latest
+    ports:
+      - "9930:8000"
+    environment:
+      MEALIE_URL: ${MEALIE_URL:-}
+      MEALIE_TOKEN: ${MEALIE_TOKEN:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+    restart: unless-stopped

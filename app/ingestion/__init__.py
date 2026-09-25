@@ -1,0 +1,1 @@
+"""Recipe ingestion package."""
